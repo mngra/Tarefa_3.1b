@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANIMALEC</title>
+    <link rel="icon" href="img/animalec.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/estilos.css">
+</head>
+
+<body>
+    <!-- Menu de topo-->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+            <a class="navbar-brand ml-5" href="#">
+                <img src="img/animalec_line.png" style="width:250px; height:50px" title="Página principal do Animalec"
+                    alt="Logo Animalec" />
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-collapse"
+                aria-controls="nav-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="nav-collapse">
+
+                <ul class="navbar-nav ml-auto mr-5">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#animals">ANIMAIS</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#quizzes">QUIZZES</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacts">CONTACTOS</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacts">LOGIN</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Conteúdo da página-->
+    <section class="page-section">
+        <div class="container">
+            <header class="header-page">
+                <h1 class="mt-5">GESTÃO DE PATROCINADORES</h1>
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+            </header>
+
+            <!--botões patrocinadores-->
+            <div class="d-none row mb-4 d-none d-md-block ta-left">
+                <div class="col">
+                    <a href="patrocinadores-adicionar.html"><button type="button" class="btn btn-outline-success"><i
+                            class="fa-solid fa-square-plus"></i> ADICIONAR PATROCINADOR</button> </a>
+                    <a href="admin.html"><button type="button" class="btn btn-outline-info"><i
+                                class="fa-solid fa-bars"></i> MENU PRINCIPAL</button></a>
+                </div>
+            </div>
+
+            <!--tabela de patrocinadores-->
+            <div class="row mb-4 ta-left">
+                <div class="col">
+                    <table class="table table-striped table-hover">
+                        <thead>
+                            <tr class="bg-toolbar text-white">
+                                <th scope="col">NOME</th>
+                                <th scope="col">TIPO PATROCÍNIO</th>
+                                <th scope="col" class="d-none d-md-table-cell">DATA INÍCIO</th>
+                                <th scope="col" class="d-none d-md-table-cell menu-acoes">AÇÕES</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr data-href="patrocinadores-visualizar.html">
+                                <td>carros e carroças, lda</th>
+                                <td>Institucional</td>
+                                <td class="d-none d-md-table-cell">01/02/2023</td>
+                                <td class="bg-white d-none d-md-table-cell">
+                                    <a href="patrocinadores-alterar.html"><button type="button"
+                                        class="btn btn-outline-warning"><i class="fa-solid fa-pen-to-square"></i> EDITAR
+                                    </button></a>
+                                    <a href="patrocinadores-visualizar.html"><button type="button"
+                                        class="btn btn-outline-success"><i class="fa-solid fa-magnifying-glass"></i> VER
+                                    </button></a>
+                                     <button type="button" class="btn btn-outline-danger" data-toggle="modal" data-target="#deleteModal">
+                                        <i class="fa-solid fa-trash-can"></i> REMOVER
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr data-href="patrocinadores-visualizar.html">
+                                <td>Juventudina</th>
+                                <td>Institucional</td>
+                                <td class="d-none d-md-table-cell">21/03/2022</td>
+                                <td class="bg-white d-none d-md-table-cell">
+                                    <a href="patrocinadores-alterar.html"><button type="button"
+                                        class="btn btn-outline-warning"><i class="fa-solid fa-pen-to-square"></i> EDITAR
+                                    </button></a>
+                                    <a href="patrocinadores-visualizar.html"><button type="button"
+                                        class="btn btn-outline-success"><i class="fa-solid fa-magnifying-glass"></i> VER
+                                    </button></a>
+                                     <button type="button" class="btn btn-outline-danger" data-toggle="modal" data-target="#deleteModal">
+                                        <i class="fa-solid fa-trash-can"></i> REMOVER
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr data-href="patrocinadores-visualizar.html">
+                                <td>Limpex</th>
+                                <td>Institucional</td>
+                                <td class="d-none d-md-table-cell">01/02/2019</td>
+                                <td class="bg-white d-none d-md-table-cell">
+                                    <a href="patrocinadores-alterar.html"><button type="button"
+                                        class="btn btn-outline-warning"><i class="fa-solid fa-pen-to-square"></i> EDITAR
+                                    </button></a>
+                                    <a href="patrocinadores-visualizar.html"><button type="button"
+                                        class="btn btn-outline-success"><i class="fa-solid fa-magnifying-glass"></i> VER
+                                    </button></a>
+                                     <button type="button" class="btn btn-outline-danger" data-toggle="modal" data-target="#deleteModal">
+                                        <i class="fa-solid fa-trash-can"></i> REMOVER
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr data-href="patrocinadores-visualizar.html">
+                                <td>Alcatifex</th>
+                                <td>Institucional</td>
+                                <td class="d-none d-md-table-cell">12/12/2023</td>
+                                <td class="bg-white d-none d-md-table-cell">
+                                    <a href="patrocinadores-alterar.html"><button type="button"
+                                        class="btn btn-outline-warning"><i class="fa-solid fa-pen-to-square"></i> EDITAR
+                                    </button></a>
+                                    <a href="patrocinadores-visualizar.html"><button type="button"
+                                        class="btn btn-outline-success"><i class="fa-solid fa-magnifying-glass"></i> VER
+                                    </button></a>
+                                     <button type="button" class="btn btn-outline-danger" data-toggle="modal" data-target="#deleteModal">
+                                        <i class="fa-solid fa-trash-can"></i> REMOVER
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr data-href="patrocinadores-visualizar.html">
+                                <td>Thilo Stocks</th>
+                                <td>Pessoal</td>
+                                <td class="d-none d-md-table-cell">09/02/2023</td>
+                                <td class="bg-white d-none d-md-table-cell">
+                                    <a href="patrocinadores-alterar.html"><button type="button"
+                                        class="btn btn-outline-warning"><i class="fa-solid fa-pen-to-square"></i> EDITAR
+                                    </button></a>
+                                    <a href="patrocinadores-visualizar.html"><button type="button"
+                                        class="btn btn-outline-success"><i class="fa-solid fa-magnifying-glass"></i> VER
+                                    </button></a>
+                                     <button type="button" class="btn btn-outline-danger" data-toggle="modal" data-target="#deleteModal">
+                                        <i class="fa-solid fa-trash-can"></i> REMOVER
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr data-href="patrocinadores-visualizar.html">
+                                <td>Restaurante Luzia</th>
+                                <td>Institucional</td>
+                                <td class="d-none d-md-table-cell">01/02/2023</td>
+                                <td class="bg-white d-none d-md-table-cell">
+                                    <a href="patrocinadores-alterar.html"><button type="button"
+                                        class="btn btn-outline-warning"><i class="fa-solid fa-pen-to-square"></i> EDITAR
+                                    </button></a>
+                                    <a href="patrocinadores-visualizar.html"><button type="button"
+                                        class="btn btn-outline-success"><i class="fa-solid fa-magnifying-glass"></i> VER
+                                    </button></a>
+                                     <button type="button" class="btn btn-outline-danger" data-toggle="modal" data-target="#deleteModal">
+                                        <i class="fa-solid fa-trash-can"></i> REMOVER
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr data-href="patrocinadores-visualizar.html">
+                                <td>Robertson Joe</th>
+                                <td>Pessoal</td>
+                                <td class="d-none d-md-table-cell">21/04/2023</td>
+                                <td class="bg-white d-none d-md-table-cell">
+                                    <a href="patrocinadores-alterar.html"><button type="button"
+                                        class="btn btn-outline-warning"><i class="fa-solid fa-pen-to-square"></i> EDITAR
+                                    </button></a>
+                                    <a href="patrocinadores-visualizar.html"><button type="button"
+                                        class="btn btn-outline-success"><i class="fa-solid fa-magnifying-glass"></i> VER
+                                    </button></a>
+                                     <button type="button" class="btn btn-outline-danger" data-toggle="modal" data-target="#deleteModal">
+                                        <i class="fa-solid fa-trash-can"></i> REMOVER
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr data-href="patrocinadores-visualizar.html">
+                                <td>Kally Yogër</th>
+                                <td>Pessoal</td>
+                                <td class="d-none d-md-table-cell">18/05/2012</td>
+                                <td class="bg-white d-none d-md-table-cell">
+                                    <a href="patrocinadores-alterar.html"><button type="button"
+                                        class="btn btn-outline-warning"><i class="fa-solid fa-pen-to-square"></i> EDITAR
+                                    </button></a>
+                                    <a href="patrocinadores-visualizar.html"><button type="button"
+                                        class="btn btn-outline-success"><i class="fa-solid fa-magnifying-glass"></i> VER
+                                    </button></a>
+                                     <button type="button" class="btn btn-outline-danger" data-toggle="modal" data-target="#deleteModal">
+                                        <i class="fa-solid fa-trash-can"></i> REMOVER
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr data-href="patrocinadores-visualizar.html">
+                                <td>Gregoriy Shout</th>
+                                <td>Pessoal</td>
+                                <td class="d-none d-md-table-cell">05/05/2018</td>
+                                <td class="bg-white d-none d-md-table-cell">
+                                    <a href="patrocinadores-alterar.html"><button type="button"
+                                        class="btn btn-outline-warning"><i class="fa-solid fa-pen-to-square"></i> EDITAR
+                                    </button></a>
+                                    <a href="patrocinadores-visualizar.html"><button type="button"
+                                        class="btn btn-outline-success"><i class="fa-solid fa-magnifying-glass"></i> VER
+                                    </button></a>
+                                     <button type="button" class="btn btn-outline-danger" data-toggle="modal" data-target="#deleteModal">
+                                        <i class="fa-solid fa-trash-can"></i> REMOVER
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Botões fixos ao rodapé - apenas para mobile -->
+    <footer class="fixed-bottom bg-light p-3 border-top d-block d-md-none">
+        <div class="container-fluid">
+            <div class="row">
+                <a href="patrocinadores-adicionar.html"><button type="button"
+                    class="btn btn-sm btn-outline-success"><i class="fa-solid fa-square-plus"></i> ADICIONAR
+                    PATROCINADOR</button></a>
+                <a href="admin.html"><button type="button" class="btn btn-sm btn-outline-info ml-2"><i
+                            class="fa-solid fa-bars"></i> MENU PRINCIPAL</button></a>
+
+            </div>
+        </div>
+    </footer>
+    <!-- Modal -->
+    <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="text-center">
+                        <img src="img/carroca.jpg">
+                        <div class="fa-2x">Deseja mesmo eliminar o patrocinador?</div>
+                        <div class="mt-4">se sim, clique ok</div>
+                    
+                        <div class="mt-10">
+                            <button class="btn btn-sm btn-success btn-close">Ok</button>
+                            <button class="btn btn-sm btn-danger btn-close">Cancelar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/rows-clickable.js"></script>
+     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script>
+        $('.btn-close').click(function(){
+            $('#deleteModal').modal('hide')
+        })
+    </script>
+    <script src="https://kit.fontawesome.com/f9fed9fefa.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

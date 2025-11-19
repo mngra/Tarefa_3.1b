@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANIMALEC</title>
+    <link rel="icon" href="img/animalec.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/estilos.css">
+</head>
+
+<body>
+    
+    <!-- Menu de topo-->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+            <a class="navbar-brand ml-5" href="#">
+                <img src="img/animalec_line.png" style="width:250px; height:50px" title="Página principal do Animalec"
+                    alt="Logo Animalec" />
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-collapse"
+                aria-controls="nav-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="nav-collapse">
+
+                <ul class="navbar-nav ml-auto mr-5">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#animals">ANIMAIS</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#quizzes">QUIZZES</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacts">CONTACTOS</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacts">LOGIN</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Conteúdo da página-->
+    <section class="page-section">
+        <div class="container">
+            <header class="header-page">
+                <h1 class="mt-5">ALTERAR PATROCINADOR</h1>
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+            </header>
+
+            <div class="row mb-4">
+                <div class="col-12">
+                    <form>
+
+                        <div class="row">
+
+                            <div class="col-12 col-md-12 order-1">
+                                <div class="form-group">
+                                    <div class="row g-0">
+                                        <div class="col-12 col-md-9 ">
+                                            <input type="text" class="form-control" id="nomeInput" placeholder="identificacao do patrocinador" value="carros e carroças, lda">
+                                        </div>
+                                        <div class="col-12 col-md-3 "> &nbsp;
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Caroussel -->
+                            <div class="col-12 col-md-3 order-2 order-md-2">
+                                <div class="form-group">
+                                    <input type="file" class="form-control" id="logo" placeholder="Upload do logotipo" >
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md-9 order-3 order-md-1">
+                                <div class="row">
+                                    <div class="col-12 col-md-6 mb-3 mb-md-0  pe-md-3">
+                                        <input type="date" class="form-control" id="inicioInput" placeholder="data inicio" value="2023-02-01">
+                                    </div>
+                                    <div class="col-12 col-md-6 pe-md-3">
+                                        <input type="date" class="form-control" id="inicioInput" placeholder="data inicio" value="2025-02-01">
+                                        
+                                    </div>
+                                </div>
+                                <div class="row g-0 mt-3">
+                                    <div class="col-12 col-md-4 mb-3 mb-md-0  pe-md-3">
+                                        <select id="inputState" class="form-control">
+                                            <option value="" disabled hidden>Tipo patrocínio</option>
+                                            <option value="1" selected >Pessoal</option>
+                                            <option value="0">Institucional</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12 col-md-4 ">
+                                        <input type="text" class="form-control" id="nomeInput" placeholder="valor do patrocínio" value="1000">
+                                    </div>
+                                    <div class="col-12 col-md-4 mt-3">
+                                        <select id="inputState" class="form-control">
+                                            <option value="" disabled hidden>estado</option>
+                                            <option value="1" >ativo</option>
+                                            <option value="0" selected>suspenso</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group mt-3 ta-left">
+                                    <strong>lista de animais</strong>
+                                    <div class="row animal mt-2">
+                                        <div class="col-10">
+                                            <select id="inputAnimal" class="form-control">
+                                                <option value="" disabled  hidden>animal</option>
+                                                <option selected>cães</option>
+                                                <option>gato</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-2 text-end">
+                                            <button type="button" class="btn btn-outline-danger w-100"><i class="fa-solid fa-minus"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <button type="button" class="btn btn-outline-success w-100"><i class="fa-solid fa-dog"></i> adicionar animal</button>
+                                </div>
+                                
+                                
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="form-group mt-3 ta-left">
+                                    <strong>lista de links</strong>
+                                    <div class="row animal mt-2">
+                                        <div class="col-10">
+                                            <input type="text" class="form-control" id="contactInput" placeholder="contacto/telefone" value="www.carsandrigs.com">
+                                        </div>
+                                        <div class="col-2 text-end">
+                                            <button type="button" class="btn btn-outline-danger w-100"><i class="fa-solid fa-minus"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <button type="button" class="btn btn-outline-success w-100"><i class="fa-solid fa-link"></i> adicionar link</button>
+                                </div>
+                                <div class="form-group mt-3 ta-left">
+                                    <strong>lista de contactos</strong>
+                                    <div class="row contacto mt-2">
+                                        <div class="col-10">
+                                            <input type="text" class="form-control" id="contactInput" placeholder="contacto/telefone" value="support@carsandrigs.com">
+                                        </div>
+                                        <div class="col-2 text-end">
+                                            <button type="button" class="btn btn-outline-danger w-100"><i class="fa-solid fa-minus"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <button type="button" class="btn btn-outline-success w-100"><i class="fa-solid fa-phone"></i> adicionar contacto</button>
+                                </div>
+
+                                <div class="form-group mt-3">
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="descrição">suspenso por falta de pagamento</textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="row mb-4 d-none d-md-block ta-left">
+                <div class="col">
+                    <a href="patrocinadores-lista.html"> <button type="submit" class="btn btn-success"><i class="fa-solid fa-square-plus"></i> ALTERAR ESPECIALISTA</button></a>
+                    <a href="patrocinadores-lista.html" class="btn btn-danger ml-2"><i class="fa-solid fa-square-xmark"></i> CANCELAR</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="fixed-bottom bg-light p-3 border-top d-block d-md-none">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-6">
+                    <a href="patrocinadores-lista.html"><button type="submit" class="btn btn-success w-100"><i class="fa-solid fa-square-plus"></i>
+                        ADICIONAR</button></a>
+                </div>
+                <div class="col-6">
+                    <a href="patrocinadores-lista.html" class="btn btn-danger w-100"><i class="fa-solid fa-square-xmark"></i> CANCELAR</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botões fixos ao rodapé - apenas para mobile -->
+    <footer class="fixed-bottom bg-light p-3 border-top d-block d-md-none">
+        <div class="container-fluid">
+            <div class="row">
+                <a href="patrocinadores-lista.html"><button type="button" class="btn btn-sm btn-outline-success"><i class="fa-solid fa-square-plus"></i> ALTERAR PATROCINADOR</button></a>
+                <a href="patrocinadores-lista.html"><button type="button" class="btn btn-sm btn-outline-danger ml-2"><i class="fa-solid fa-square-xmark"></i> CANCELAR</button></a>
+            </div>
+        </div>
+    </footer>
+    <!-- Javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"> </script>
+    <script src="https://kit.fontawesome.com/f9fed9fefa.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>

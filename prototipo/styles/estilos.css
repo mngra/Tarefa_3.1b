@@ -1,0 +1,175 @@
+/* Estilos básicos para simular o layout de coluna e cards */
+body {
+    margin: 0;
+    font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    margin-bottom: 0.5rem;
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight: 700;
+    line-height: 1.2;
+}
+.page-section {
+    padding: 20px 0;
+    text-align: center;
+}
+.container-fluid {
+    width: 90%;
+    margin: 0 auto;
+}
+.header-page {
+    margin-bottom: 30px;
+}
+.header-page h1 {
+    font-size: 2em;
+    color: #333;
+}
+.row {
+    display: flex;
+    justify-content: center; /* Centraliza a linha */
+}
+.col-4 {
+    width: 33.333%; /* Simula a coluna cols="4" */
+}
+.content-col {
+    width: 50%; /* Coluna central */
+}
+.card-group {
+    display: flex;
+    gap: 15px; /* Espaço entre os cards */
+    margin-bottom: 15px;
+}
+.admin-option-box {
+    flex: 1; /* Faz os cards terem a mesma largura */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    color: #000;
+    transition: transform 0.2s;
+}
+.admin-option-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.2);
+}
+.icon {
+    font-size: 2em;
+    margin-bottom: 5px;
+    /* Nota: Seria necessário uma biblioteca de ícones como Font Awesome para exibir "users", "dog", etc. */
+}
+.title {
+    font-weight: bold;
+}
+.mt-3 {
+    margin-top: 15px;
+}
+
+.mt-2 {
+    margin-top: 10px;
+}
+
+a.menu-icon  {
+    text-decoration: none;
+    color: #1abc9c
+}
+
+a.menu-icon:hover  {
+    text-decoration: none;
+    color: #117964
+}
+.fa-5x{
+    font-size: 5em;
+}
+
+.fa-2x{
+    font-size: 1.5rem;
+}
+
+.info-detail {
+    font-size: 0.8em;
+}
+
+.divider-custom .divider-custom-line {
+    width: 100%;
+    max-width: 7rem;
+    height: 0.25rem;
+    background-color: #2c3e50;
+    border-radius: 1rem;
+    border-color: #2c3e50 !important;
+}
+.divider-custom {
+    margin: 1.25rem 0 1.5rem;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.mt-5{margin-top: 3rem !important;}
+
+.bg-secondary {
+    background-color: #2c3e50 !important;
+}
+
+.ta-left{
+    text-align: left !important;
+}
+
+.mb-4, .my-4 {
+    margin-bottom: 1.5rem !important;
+    
+}
+
+.mb-8, .my-8 {
+    margin-bottom: 3rem !important;
+    
+}
+
+.mt-8{
+    margin-top: 3rem !important;
+}
+
+.mt-10{
+    margin-top: 6rem !important;
+}
+
+
+.bg-white{
+    background-color: rgb(255, 255, 255) !important;
+}
+
+.bg-toolbar{
+    background-color: #212529
+}
+
+.text-white{
+    color:#ffffff
+}
+
+.menu-acoes{
+    width:31%;
+    white-space:nowrap
+}
+
+.ta-end{
+    text-align: right !important;
+}
+
+.btn-ok {width:5em}
+
+.carousel-control-next-icon, .carousel-control-prev-icon{
+    filter:invert(100%);
+    position: absolute;
+    bottom:2px}
